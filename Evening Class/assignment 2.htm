@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Question Answers:</h2><br>
+    <h3>1. The purpose and basic syntax of the <button>button</button> element.</h3>
+    <p><button>Button</button> element is used to trigger an action such as submitting a form, opening a modal etc.
+        Syntax:
+        <button>Register Now</button>
+    </p>
+
+    <h3>2. Differences Between button and input type="button".</h3>
+    <b>button:- </b>The button can have content in it. Button by default acts as submitter when placed with in a form. The button tag permits phrasing contents like text or images etc, along work with type functionality defined.<br>
+    <b>input type="button":-</b>It does not permit content.
+
+    <h3>3. Button types (submit,reset,button) and their roles in forms:Describe the three types of buttons and their purposes in form submission and interaction.</h3>
+    <b>Submit button:-</b>Submits the form data to the server for processing. <br>
+    <b>Reset button:-</b>Resets all form fields to their default values. <br>
+    <b>Button:-</b>Used to handle JavaScript functions.
+
+    <h3>4. How to Create Buttons That Submit Forms, Reset Forms, and Trigger Simple Actions Using HTML Attributes: Provide examples of how to use HTML attributes to create these types of buttons.</h3>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+    <button type="button" onclick="alert('your form is submitted.')">Submit</button>
+
+    <h3>5. How to Disable a Button Using the disabled Attribute? Explain how to use the disabled attribute and when it is useful in form interaction.</h3>
+    <p>We can disable a button by adding 'disabled' attribute.</p>
+    Example:
+    <button type="button" name="button" disabled>Post</button>
+    <p>The Boolean disabled attribute, when present, makes the element not mutable, focusable, or even submitted with the form. The user can neither edit nor focus on the control, nor its form control descendants.</p>
+
+    <h3>6. The Use of the autofocus Attribute in a Button and When It Is Appropriate to Use. Provide a brief explanation of this attribute and an example of its usage.
+    </h3>
+    <p>The autofocus attribute is a boolean attribute. When present, it specifies that the element should automatically get focus when the page loads.</p>
+    Example:
+    <button type="button" autofocus>Click Here</button>
+
+    <h3>7. Differences Between a Submit Button and a Reset Button in an HTML Form: Clarify the different roles these buttons play when handling forms.
+    </h3>
+    <b>Submit Button:-</b>Submit button is used to send the data entered in the form to the server for processing.<br>
+    It is defined as follows:
+    <input type = "submit" Value = "SUBMIT"><br>
+    <b>Reset Button:-</b>A reset button is used to clear or reset the contents of a form, reverting all form fields back to their default or initial values.<br>
+    It is defined as follows:
+    <input type = "reset" Value = "RESET">
+
+    <h3>8. How to Add Text and Icons Inside Buttons Using Only HTML Elements: Demonstrate how to style and structure buttons to include both text and icons using HTML elements</h3>
+    <button type="submit">
+        <img src="../img/flower.jpg" alt="" height="16" width="16">Submit
+    </button><br>
+    <button type="submit">
+        <i class="button"></i>Submit
+    </button></p>
+   
+    <form action="" method="post">
+        <fieldset>
+            <h1>Registration Form</h1><br>
+            First Name: <input type="text" id="fname" name="firstname" placeholder="Enter First Name"><br>
+            Last Name: <input type="text" id="lname" name="lastname" placeholder="Enter Last Name"><br>
+            Email: <input type="email" id="email" name="email" placeholder="Enter Email Address"><br>
+            Password: <input type="password" id="password" name="password"><br>
+            Gender:<br>
+            Male <input type="radio" id="gender" name="gender" id="gender"><br>
+            Female <input type="radio" id="gender" name="gender" id="gender"><br>
+            Others <input type="radio" id="gender" name="gender" id="gender"><br>
+            Age: <input type="number" id="age" name="age"><br>
+            Preferences :<br>
+            Acrylic Painting <input type="checkbox" id="painting"  name="painting"><br>
+            Oil Painting <input type="checkbox" id="oil" name="oil"><br>
+            Water Color Painting <input type="checkbox" id="water" name="water"><br>
+            Select occupation
+            <select id="occupation" name="occupation">
+                <option value="Teacher">Teacher</option>
+                <option value="Student" selected>Student</option>
+                <option value="Doctor">Doctor</option>
+                <option value="Engineer">Engineer</option>
+                <option value="Pilot" disabled>Pilot</option><br>
+            </select><br>
+                Bio <textarea name="feedback" id="feedback" rows="7" cols="30" placeholder="Share few lines about yourself..."></textarea><br>
+               <button type="reset">RESET</button>
+               <button type="submit">SUBMIT</button>
+        </fieldset>
+    </form>
+</body>
+</html>
